@@ -15,12 +15,61 @@ As humans cannot consume so many numbers, there is a saying, a picture is worth 
 # Data Discovery
 project planning using the AIMS grid and data discovery after the Sales Director at AtliQ hardware realizes the pains and the possible solution. 
 ### AIMS grid is a project management tool and it has four components:
-**Purpose:**
+**1. Purpose:**
 To unlock sales insights that are not visible before for the sales team for decision support and automate them to reduce manual time spent in data gathering.
 
-**Stakeholders:**
+**2. Stakeholders:**
 * Sales Director
 * Marketing Team
 * Customer Service Team
 * Data and Analytics Team
+
+**3. End Result:**
+An automated dashboard providing quick and latest sales insights in order to support data-driven decision-making.
+
+**4. Success Criteria:**
+Dashboard(s) uncovering the sales order insights with the latest data available
+The sales team is able to take better decisions and prove 10% cost savings of total spend
+Sales Anlysts stop data gathering manually in order to save 20% of their business time and reinvest it value added activity
+
+# Data Cleaning and ETL (Extract, Transform, and Load)
+**I did simple data analysis using SQL.**   
+1. Show all customer records
+
+    `SELECT * FROM customers;`
+
+1. Show total number of customers
+
+    `SELECT count(*) FROM customers;`
+
+1. Show transactions for Chennai market (market code for chennai is Mark001
+
+    `SELECT * FROM transactions where market_code='Mark001';`
+
+1. Show distrinct product codes that were sold in chennai
+
+    `SELECT distinct product_code FROM transactions where market_code='Mark001';`
+
+1. Show transactions where currency is US dollars
+
+    `SELECT * from transactions where currency="USD"`
+
+1. Show transactions in 2020 join by date table
+
+    `SELECT transactions.*, date.* FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020;`
+
+1. Show total revenue in year 2020,
+
+    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";`
+	
+1. Show total revenue in year 2020, January Month,
+
+    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");`
+
+1. Show total revenue in year 2020 in Chennai
+
+    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020
+and transactions.market_code="Mark001";`
+
+
 
