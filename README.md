@@ -24,10 +24,10 @@ To unlock sales insights that are not visible before for the sales team for deci
 * Customer Service Team
 * Data and Analytics Team
 
-**3. End Result:**
+**3. End Result:**  
 An automated dashboard providing quick and latest sales insights in order to support data-driven decision-making.
 
-**4. Success Criteria:**
+**4. Success Criteria:**  
 Dashboard(s) uncovering the sales order insights with the latest data available
 The sales team is able to take better decisions and prove 10% cost savings of total spend
 Sales Anlysts stop data gathering manually in order to save 20% of their business time and reinvest it value added activity
