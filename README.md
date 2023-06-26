@@ -12,7 +12,7 @@ He wants to see the clear picture and wants to know in simplistic terms how our 
 
 As humans cannot consume so many numbers, there is a saying, a picture is worth a thousand words. So he's more interested in a dashboard where he can check and look at what’s happening in real-time and then as a Sales director he can make data-driven decisions and these data-driven decisions will help him increase the sales for his company. So that's all I have for the problem statement, we'll be talking more about it next sections and the data discovery phase.
 
-# Data Discovery
+## Data Discovery
 project planning using the AIMS grid and data discovery after the Sales Director at AtliQ hardware realizes the pains and the possible solution. 
 ### AIMS grid is a project management tool and it has four components:
 **1. Purpose:**
