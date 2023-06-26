@@ -32,8 +32,7 @@ Dashboard(s) uncovering the sales order insights with the latest data available
 The sales team is able to take better decisions and prove 10% cost savings of total spend
 Sales Anlysts stop data gathering manually in order to save 20% of their business time and reinvest it value added activity
 
-# Data Cleaning and ETL (Extract, Transform, and Load)
-**I did simple data analysis using SQL.**   
+# I did simple data analysis using SQL.   
 1. Show all customer records
 
     `SELECT * FROM customers;`
@@ -70,6 +69,38 @@ Sales Anlysts stop data gathering manually in order to save 20% of their busines
 
     `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020
 and transactions.market_code="Mark001";`
+
+# Data Cleaning and ETL (Extract, Transform, and Load)
+
+
+We did simple data analysis using MySQL. Now we are going to use tableau to connect with the same MySQL database and we will pull this data and do data cleaning, it is also known as ETL (extract, transform, and load). We will do some transformation because some of the data is messy and we will need we need to convert it into a different format so that we can perform our data analysis. We will pull this data in tableau, we'll do our transformation or ETL and then we will build a data model this data model will be suitable for doing our analysis. Now, tableau is connected with MySQL pulling all the records from these tables into the tableau  environment. 
+
+Now we’ll make our data model (shows a relationship between your different tables), by default it establishes some relationship if the column names are the same in different tables. If columns contain the same values but their names are different we’ve to drag and drop columns to make the relationship. In the data model, there are two basic types of schemas star and snowflake. In a star schema, there is a fact table and a dimension table in our case see the fact table is a transaction (the actual transaction actual activity) is fact table, it is basically events that are happening in your business and the dimension table is the table such as customer, product, market and so on and all these tables entity tables connect with your fact table in this manner and it kind of looks like a star that is why it is called a star schema. We have done our data modeling.
+   
+
+![Screenshot (99)](https://github.com/mohdirfan1/Sales-Insights/assets/107385987/5a788d8a-7311-4207-9cfb-2720d1a0ee52)
+
+
+The first thing we want to filter out is New York and Paris from the Markets table because XYZ-hardware is running a business only in India right now and New York and Paris happen to be some value that exists in our database. By going on transform data 
+The second one, in our sales transaction table the problem that we had in this table was there are two problems one is the sales amount is -1 and 0. We’ll filter out these two values.   
+and have convert some USD transaction in INR 
+# Data Visualization
+https://public.tableau.com/app/profile/mohd.irfan3276/viz/salesinsight_16877938881700/Dashboard1
+
+![Dashboard 1](https://github.com/mohdirfan1/Sales-Insights/assets/107385987/b8f33c58-e2cd-4e0c-9f37-2e2ae336a656)
+
+## After doing all this different created visualization which are:
+* Revenue by Markets
+* Quantity by Markets
+* Revenue by year 
+* Top 5 Customers
+* Top 5 Products
+
+
+
+
+
+
 
 
 
