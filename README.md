@@ -15,7 +15,7 @@ As humans cannot consume so many numbers, there is a saying, a picture is worth 
 ## Data Discovery
 project planning using the AIMS grid and data discovery after the Sales Director at AtliQ hardware realizes the pains and the possible solution. 
 ### AIMS grid is a project management tool and it has four components:
-**1. Purpose:**
+**1. Purpose:**     
 To unlock sales insights that are not visible before for the sales team for decision support and automate them to reduce manual time spent in data gathering.
 
 **2. Stakeholders:**
@@ -24,10 +24,10 @@ To unlock sales insights that are not visible before for the sales team for deci
 * Customer Service Team
 * Data and Analytics Team
 
-**3. End Result:**  
+**3. End Result:**      
 An automated dashboard providing quick and latest sales insights in order to support data-driven decision-making.
 
-**4. Success Criteria:**  
+**4. Success Criteria:**      
 Dashboard(s) uncovering the sales order insights with the latest data available
 The sales team is able to take better decisions and prove 10% cost savings of total spend
 Sales Anlysts stop data gathering manually in order to save 20% of their business time and reinvest it value added activity
