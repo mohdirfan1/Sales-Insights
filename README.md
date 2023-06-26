@@ -1,6 +1,6 @@
 # Sales-Insights
 Sales Insights Data Analysis Project
-![Dashboard 1](https://github.com/mohdirfan1/Sales-Insights/assets/107385987/b8f33c58-e2cd-4e0c-9f37-2e2ae336a656)
+https://public.tableau.com/app/profile/mohd.irfan3276/viz/salesinsight_16877938881700/Dashboard1
 
 ## Problem Statement
 
