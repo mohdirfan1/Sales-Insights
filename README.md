@@ -1,5 +1,7 @@
 # Sales-Insights
 Sales Insights Data Analysis Project
+![Dashboard 1](https://github.com/mohdirfan1/Sales-Insights/assets/107385987/b8f33c58-e2cd-4e0c-9f37-2e2ae336a656)
+
 ## Problem Statement
 
 XYZ-Hardware is a company that supplies computer hardware and peripherals to many clients. They have this client called Excel stores, and normal stores across India and they supply all these types of equipment to them now. XYZ-Hardware has a head office in Delhi, India and they have a lot of regional offices throughout India.
